@@ -4,7 +4,7 @@ print(x.." "..y) --.. is the concatenation operator
 arr = {10,20,30} --Create an array
 print(arr[3]) --Access the data at position 3 (lua is 1 relative)
 
-print(#arr) --Returns 3, becuase # is the length operator
+print(#arr) --Returns 3, becuase # is the length operator and the array has 3 members
 
  arr2 = {xpos=10,ypos=20} --This is an array in the form "key=value"
  print(arr2["ypos"])
@@ -23,7 +23,7 @@ for x,y in pairs(arr2) do --x,y are placeholder values for the key,value in arr2
   print(x.."="..y)
 end
 
-function mult(x,y) --Create a multiply function that multiplis x and y
+function mult(x,y) --Create a multiply function that multiplies x and y
   return (x*y)
 end
 print(mult(x,y)) --Call the funciton and print the calculation
